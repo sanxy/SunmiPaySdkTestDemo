@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleSize"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/check_psam"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titleSize"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/card_check_card_psam"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@color/colorOrange"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/check_mifare"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titleSize"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/card_check_card_mifare"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@color/colorOrange"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/m1_auth"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titleSize"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/card_mifare_auth"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@color/colorOrange"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/m1_read"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titleSize"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/card_mifare_read_block"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@color/colorOrange"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/m1_write"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titleSize"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/card_mifare_write_block"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@color/colorOrange"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/m1_inc"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titleSize"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/card_mifare_inc"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@color/colorOrange"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/m1_dec"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titleSize"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/card_mifare_dec"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@color/colorOrange"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/titleSize"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                app:backgroundTint="@color/colorOrange"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

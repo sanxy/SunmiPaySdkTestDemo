@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="smallSize">24dp</dimen>
+    <dimen name="itemSize">48dp</dimen>
+    <dimen name="titleSize">56dp</dimen>
+
+</resources>

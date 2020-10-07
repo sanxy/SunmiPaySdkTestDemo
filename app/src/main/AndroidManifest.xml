@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sm.sdk.demo">
+
+    <uses-permission android:name="com.sunmi.perm.LED" />
+    <uses-permission android:name="com.sunmi.perm.MSR" />
+    <uses-permission android:name="com.sunmi.perm.ICC" />
+    <uses-permission android:name="com.sunmi.perm.PINPAD" />
+    <uses-permission android:name="com.sunmi.perm.SECURITY" />
+    <uses-permission android:name="com.sunmi.perm.CONTACTLESS_CARD" />
+
+    <uses-permission android:name="android.permission.SET_TIME" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".basic.LedActivity" />
+        <activity android:name=".basic.BasicActivity" />
+        <activity android:name=".basic.BuzzerActivity" />
+        <activity android:name=".basic.GetSysParamActivity" />
+        <activity android:name=".basic.SetSysParamActivity" />
+        <activity android:name=".basic.ScreenModelActivity" />
+
+        <activity android:name=".card.CardActivity" />
+        <activity android:name=".card.MagActivity" />
+        <activity android:name=".card.MagEncActivity" />
+        <activity android:name=".card.ICActivity" />
+        <activity android:name=".card.M1Activity" />
+        <activity
+            android:name=".card.SAMActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".card.FELICAActivity" />
+        <activity android:name=".card.MifareUltralightCActivity" />
+        <activity android:name=".card.MifareUtralightEv1Activity" />
+        <activity
+            android:name=".card.NormalApduActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".card.TransmitApduActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".card.MifarePlusActivity" />
+        <activity android:name=".card.MifareAuthedByPSAMActivity" />
+        <activity android:name=".card.SLE4442_4428Actviity" />
+        <activity android:name=".card.AT24CActivity" />
+        <activity android:name=".card.AT88SCActivity" />
+        <activity android:name=".card.CTX512Activity" />
+        <activity android:name=".card.CtrCodeAndMultiApduActivity" />
+
+        <activity android:name=".security.SecurityActivity" />
+        <activity android:name=".security.SaveKeyPlainTextActivity" />
+        <activity android:name=".security.SaveKeyCipherTextActivity" />
+        <activity android:name=".security.InjectPlainTextKeyActivity" />
+        <activity android:name=".security.InjectCiphertextKeyActivity" />
+        <activity android:name=".security.CalcMacActivity" />
+        <activity android:name=".security.DataEncryptActivity" />
+        <activity android:name=".security.DataDecryptActivity" />
+        <activity android:name=".security.GetEncryptBySerialNumberActivity" />
+        <activity android:name=".security.DuKptSaveKeyActivity" />
+        <activity android:name=".security.DuKptCalcMacActivity" />
+        <activity android:name=".security.DuKptDataEncryptActivity" />
+        <activity android:name=".security.DuKptDataDecryptActivity" />
+        <activity android:name=".security.DuKptKSNOperateActivity" />
+        <activity android:name=".security.RSATestActivity" />
+        <activity android:name=".security.SaveTR31KeyActivity" />
+        <activity android:name=".security.DeleteKeyActivity" />
+        <activity android:name=".security.DuKptAesSaveKeyActivity" />
+
+        <activity android:name=".pin.PinPadActivity" />
+        <activity android:name=".pin.CustomPinPadActivity" />
+
+        <activity android:name=".emv.EMVActivity" />
+        <activity android:name=".emv.ICProcessActivity" />
+        <activity android:name=".emv.RuPayCardActivity" />
+        <activity android:name=".emv.MagProcessActivity" />
+        <activity android:name=".emv.EmvOtherActivity" />
+
+        <activity android:name=".tax.TaxTestActivity" />
+
+        <activity android:name=".print.PrintActivity" />
+        <activity android:name=".print.PrintTextActivity" />
+
+        <activity android:name=".scan.ScanActivity" />
+        <activity android:name=".scan.ScanResultActivity" />
+        <activity android:name=".scan.BarcodeActivity" />
+
+        <activity android:name=".etc.ETCActivity" />
+        <activity
+            android:name=".etc.I2CDataExchangeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".etc.SearchETCDeviceActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".etc.ETCStressTestActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".other.OtherActivity" />
+        <activity android:name=".other.VersionActivity" />
+        <activity android:name=".other.LanguageActivity" />
+        <activity android:name=".other.TamperLogActivity" />
+        <activity android:name=".other.MultiThreadTestActivity" />
+        <activity android:name=".other.ESignatureActivity" />
+        <activity android:name=".other.ScreenActivity" />
+        <activity android:name=".other.GB2312Activity" />
+        <activity android:name=".other.SetTimeDateActivity" />
+        <activity android:name=".other.SettingActivity" />
+        <activity android:name=".other.DeviceCommActivity" />
+        <activity android:name=".other.PCDParamActivity" />
+        <activity android:name=".emv.EMVTestSaveAidCapkActivity" />
+
+    </application>
+
+</manifest>

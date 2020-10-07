@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleSize"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sunmi_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:textAllCaps="false"
+                app:backgroundTint="@color/colorOrange"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                app:cornerRadius="5dp"
+                android:elevation="3dp"
+                android:id="@+id/tv_up"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:text="@string/up"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/colorOrange"
+                android:onClick="up" />
+
+            <com.google.android.material.button.MaterialButton
+                android:textAllCaps="false"
+                app:backgroundTint="@color/colorOrange"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                app:cornerRadius="5dp"
+                android:elevation="3dp"
+                android:id="@+id/tv_down"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_margin="15dp"
+                android:text="@string/down"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:background="@color/colorOrange"
+                android:onClick="down" />
+
+            <com.google.android.material.button.MaterialButton
+                android:textAllCaps="false"
+                app:backgroundTint="@color/colorOrange"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                app:cornerRadius="5dp"
+                android:elevation="3dp"
+                android:id="@+id/tv_left"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_margin="15dp"
+                android:text="@string/left"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/colorOrange"
+                android:onClick="left" />
+
+            <com.google.android.material.button.MaterialButton
+                android:textAllCaps="false"
+                app:backgroundTint="@color/colorOrange"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                app:cornerRadius="5dp"
+                android:elevation="3dp"
+                android:id="@+id/tv_right"
+                android:text="@string/right"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorOrange"
+                android:onClick="right" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

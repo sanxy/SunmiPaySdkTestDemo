@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleSize"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/write_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleSize"
+            android:layout_marginTop="16dp"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:text="TaxRW-Write data"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/colorOrange"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/read_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleSize"
+            android:layout_marginTop="16dp"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:text="TaxRW-Read data"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/colorOrange"
+            app:cornerRadius="8dp" />
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/colorTextContent"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

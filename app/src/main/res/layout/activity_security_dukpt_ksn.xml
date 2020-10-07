@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleSize"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/key_index"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/security_key_index"
+                android:textColor="@color/colorTextContent"
+                android:textColorHint="@color/colorTextHelp"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/security_duKpt_ksn_value"
+            android:textColor="@color/colorTextHelp"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mb_get_ksn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleSize"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:text="@string/security_duKpt_get_ksn"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/colorOrange"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mb_ksn_increased"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleSize"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:text="@string/security_duKpt_ksn_increased"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/colorOrange"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

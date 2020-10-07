@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorTextContent"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="30dp"
+        android:layout_toStartOf="@+id/mb_switch"
+        android:textColor="@color/colorTextContent"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_switch"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/itemSize"
+        android:layout_alignParentEnd="true"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:text="@string/setting_switch"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:backgroundTint="@color/colorOrange"
+        app:cornerRadius="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLineColor" />
+</RelativeLayout>
+
+
+

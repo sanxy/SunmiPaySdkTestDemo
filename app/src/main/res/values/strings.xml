@@ -1,0 +1,485 @@
+<resources>
+    <string name="app_name">SDKTestDemo</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="all_open">All Open</string>
+    <string name="all_close">All Close</string>
+    <string name="amount">Amount (cent)</string>
+    <string name="fail">Fail</string>
+    <string name="success">Success</string>
+    <string name="loading">Loading</string>
+    <string name="handling">Processing</string>
+    <string name="requesting">Requesting</string>
+
+    <string name="connect_loading">connecting to sdk</string>
+    <string name="connect_success">connect to sdk success</string>
+    <string name="connect_fail">connect to sdk fail, please exit to reconnect</string>
+
+    <string name="basic">Basic</string>
+    <string name="read_card">ReadCard</string>
+    <string name="pin_pad">PinPad</string>
+    <string name="security">Security</string>
+    <string name="emv">EMV</string>
+    <string name="scan">Scan</string>
+    <string name="version">Version</string>
+    <string name="other">Other</string>
+    <string name="etc">ETC</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="basic_get_sys_param">Get system parameters</string>
+    <string name="basic_set_sys_param">Set system parameters</string>
+    <string name="basic_buzzer">Buzzer</string>
+    <string name="basic_led">LED lamp control</string>
+    <string name="basic_led_rb_on_new">Red/Blue on(New)</string>
+    <string name="basic_led_yg_on_new">Yellow/Green on(New)</string>
+    <string name="basic_led_all_on_new">All on(New)</string>
+    <string name="basic_led_all_off_new">All off(New)</string>
+    <string name="basic_screen_mode">Set screen exclusive</string>
+
+    <string name="basic_buzzer_time">Buzzer time</string>
+    <string name="basic_buzzer_time_delay">delay time (200~10000 ms)</string>
+    <string name="basic_buzzer_1">1 time</string>
+    <string name="basic_buzzer_2">2 time</string>
+    <string name="basic_buzzer_3">3 time</string>
+    <string name="basic_buzzer_4">4 time</string>
+    <string name="basic_buzzer_5">5 time</string>
+    <string name="basic_buzzer_6">6 time</string>
+    <string name="basic_buzzer_time_delay_hint">Please input correct delay time</string>
+
+    <string name="basic_sys_key">Key name(Only set Reserved key)</string>
+    <string name="basic_sys_value">Key value</string>
+    <string name="basic_sys_key_hint">Please input key name</string>
+
+    <string name="basic_set_screen_monopoly">Set screen monopoly</string>
+    <string name="basic_clear_screen_monopoly">Clear screen monopoly</string>
+    <string name="basic_set_status_bar_drop_down_mode">Set status bar drop down mode</string>
+    <string name="basic_disable">Disable</string>
+    <string name="basic_enable">Enable</string>
+    <string name="basic_set_nav_bar_visibility">Set navigation bar(items) visibility</string>
+    <string name="basic_hide_nav_bar">Hide navigation bar</string>
+    <string name="basic_show_nav_bar">Show navigation bar</string>
+    <string name="basic_hide_nav_back">Hide Back key</string>
+    <string name="basic_hide_nav_home">Hide Home key</string>
+    <string name="basic_hide_nav_recent">Hide Recent key</string>
+    <string name="basic_hide_nav_back_and_home">Hide Back and Home key</string>
+    <string name="basic_hide_nav_back_and_recent">Hide Back and Recent key</string>
+    <string name="basic_hide_nav_home_and_recent">Hide Home and Recent key</string>
+    <string name="basic_hide_nav_all">Hide all</string>
+    <string name="basic_show_nav_all">Show all</string>
+    <string name="basic_screen_model_hint">Screen exclusive\nPower key disabled\nVolume key disabled\nSystem status bar disabled\nSystem navigation bar disabled</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="card_test_mag">Magnetic card test</string>
+    <string name="card_test_mag_enc">Magnetic card test(Encrypt track data)</string>
+    <string name="card_test_ic">IC card test</string>
+    <string name="card_test_m1">Mifare card test</string>
+    <string name="card_test_m1_psame">Mifare card test(Authenticated by SAM AV2)</string>
+    <string name="card_test_sam">SAM card test</string>
+    <string name="card_test_MIFARE_Ultralight">MiFare Ultralight C card test</string>
+    <string name="card_test_MIFARE_Ultralight_ev1">MiFare Ultralight ev1 card test</string>
+    <string name="card_test_FELICA">FeLiCa card test</string>
+    <string name="card_test_apdu">Normal APDU test</string>
+    <string name="card_test_transmit_apdu">Transmit APDU test</string>
+    <string name="card_test_mifare_plus">Mifare Plus card test</string>>
+    <string name="card_test_sle4442_4428">SLE4442/4428 card test</string>
+    <string name="card_test_at24c">AT24Cxxx card test</string>
+    <string name="card_test_at88scxx">AT88SCxxx card test</string>
+
+    <string name="card_total">Total：</string>
+    <string name="card_success">Pass：</string>
+    <string name="card_fail">Fail：</string>
+    <string name="card_track1">Track1：</string>
+    <string name="card_track2">Track2：</string>
+    <string name="card_track3">Track3：</string>
+    <string name="card_pan">PAN:</string>
+    <string name="card_service_code">Service code:</string>
+    <string name="card_check_ic_card">Find IC card</string>
+    <string name="card_check_rf_card">Find RF card</string>
+    <string name="card_check_card_error">Check card error</string>
+    <string name="card_uuid">UUID：</string>
+    <string name="card_ats">ATS:</string>
+    <string name="card_atr">ATR：</string>
+    <string name="card_NO">Card NO：</string>
+    <string name="card_expire_date">Expire Date：</string>
+    <string name="cardholder_name">Cardholder Name：</string>
+
+    <string name="card_sector">Sector (0&#8211;15)</string>
+    <string name="card_block">Block (0&#8211;2)</string>
+    <string name="card_key_A">KeyA</string>
+    <string name="card_key_B">KeyB</string>
+    <string name="card_block_0">Block0</string>
+    <string name="card_block_1">Block1</string>
+    <string name="card_block_2">Block2</string>
+    <string name="card_balance_symbol">Balance:</string>
+    <string name="card_cost">Cost</string>
+    <string name="card_read">Read</string>
+    <string name="card_write">Write</string>
+    <string name="card_init">Init</string>
+    <string name="card_balance">Balance</string>
+    <string name="card_value_add">Add</string>
+    <string name="card_value_reduce">Reduce</string>
+    <string name="card_value_restore">Restore</string>
+    <string name="card_sector_hint">Please input correct sector(0&#8211;15)</string>
+    <string name="card_block_hint">Please input correct block(0&#8211;2)</string>
+    <string name="card_key_hint">Please input correct key</string>
+    <string name="card_cost_hint">Please input correct cost amount</string>
+    <string name="card_auth_success">Auth success</string>
+    <string name="card_auth_fail">Auth fail</string>
+    <string name="card_wallet_init_success">Init wallet format success</string>
+    <string name="card_wallet_init_fail">Init wallet format fail</string>
+    <string name="card_wallet_balance_success">Get wallet balance success</string>
+    <string name="card_wallet_balance_fail">Get wallet balance fail</string>
+    <string name="card_wallet_add_value_success">Increase wallet value success</string>
+    <string name="card_wallet_add_value_fail">Increase wallet value fail</string>
+    <string name="card_wallet_dec_value_success">Decrease wallet value success</string>
+    <string name="card_wallet_dec_value_fail">Decrease wallet value fail</string>
+
+    <string name="card_command">Command</string>
+    <string name="card_lc_length">LC length</string>
+    <string name="card_data">Data content</string>
+    <string name="card_le_length">LE length</string>
+    <string name="card_command_hint">Please input correct command</string>
+    <string name="card_lc_length_hint">Please input correct LC length</string>
+    <string name="card_data_hint">Please input correct data content</string>
+    <string name="card_le_length_hint">Please input correct LE length</string>
+    <string name="card_hit_apdu_cmd">command(Hex,4B)</string>
+    <string name="card_hit_apdu_lc">Lc(Hex,1~2B unsigned,value is LEN)</string>
+    <string name="card_hit_apdu_indata">indata(Hex,LEN B)</string>
+    <string name="card_hit_apdu_le">Le(Hex,1~2B unsigned)</string>
+
+    <string name="card_read_trade_card">Start checking(trade card)</string>
+    <string name="card_clean_result">clear result</string>
+    <string name="card_nfc_apdu">send apdu</string>
+
+    <string name="card_auth_key">Authenticate key</string>
+    <string name="card_change_key">Change key</string>
+    <string name="card_read_block_data">Read block data</string>
+    <string name="card_write_block_data">Write block data</string>
+    <string name="card_read_data">Read data</string>
+    <string name="card_write_data">Write data</string>
+    <string name="card_get_remain_auth_count">Read remain authentication count</string>
+    <string name="card_write_protection_memory">Write protection memory</string>
+    <string name="card_memory_protection_status">Read memory protection status</string>
+    <string name="card_remain_count">Remain count:</string>
+    <string name="card_card_type">Card type</string>
+    <string name="card_sam0">SAM0</string>
+    <string name="card_sam1">SAM1</string>
+    <string name="card_sle4442">SLE4442</string>
+    <string name="card_sle4428">SLE4428</string>
+    <string name="card_at24c01">AT24C01</string>
+    <string name="card_at24c02">AT24C02</string>
+    <string name="card_at24c04">AT24C04</string>
+    <string name="card_at24c08">AT24C08</string>
+    <string name="card_at24c16">AT24C16</string>
+    <string name="card_at24c32">AT24C32</string>
+    <string name="card_at24c64">AT24C64</string>
+    <string name="card_at24c128">AT24C128</string>
+    <string name="card_at24c256">AT24C256</string>
+    <string name="card_at24c512">AT24C512</string>
+    <string name="card_at88sc1608">AT88SC1608</string>
+    <string name="card_ctx512B">CTX512B</string>
+
+    <string name="card_check_card_psam">Check card(PSAM0)</string>
+    <string name="card_check_card_mifare">Check card(Mifare)</string>
+    <string name="card_mifare_auth">Mifare auth</string>
+    <string name="card_mifare_read_block">Mifare read block</string>
+    <string name="card_mifare_write_block">Mifare write block</string>
+    <string name="card_mifare_inc">Mifare increment</string>
+    <string name="card_mifare_dec">Mifare decrement</string>
+
+    <string name="card_test_ctx512">CTX512 card test</string>
+    <string name="card_update">Update</string>
+    <string name="card_ctx512_update_block">Update block</string>
+    <string name="card_ctx512_get_sign">Get signature</string>
+    <string name="card_ctx512_multi_read">Multi read block</string>
+    <string name="card_ctr_code_multi_apdu_test">control code and multi APDU test</string>
+    <string name="card_active_ctr_code">active control code(Hex)</string>
+    <string name="card_data_exchange_ctr_code">data exchange control code(Hex)</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="pin_pad_card_no">Please input card No. (13&#8211;19)</string>
+    <string name="pin_pad_key_index">Please input key index (0&#8211;19)</string>
+    <string name="pin_pad_timeout">Please input timeout (0&#8211;60 s)</string>
+    <string name="pin_pad_out_of_order_keyboard">Out-of-order keyboard</string>
+    <string name="pin_pad_orderly_keyboard">Orderly PAD</string>
+    <string name="pin_pad_online_pin">Online PIN</string>
+    <string name="pin_pad_offline_pin">Offline PIN</string>
+    <string name="pin_pad_preset_keyboard">Default PIN PAD</string>
+    <string name="pin_pad_custom_keyboard">Custom PIN PAD</string>
+    <string name="pin_pad_bypass">support bypass pin</string>
+    <string name="pin_pad_call_password_keyboard">Call Default PIN PAD</string>
+    <string name="pin_pad_call_custom_keyboard">Call Custom PIN PAD</string>
+    <string name="pin_pad_key_index_hint">Please input correct key index</string>
+    <string name="pin_pad_timeout_hint">Please input correct timeout</string>
+    <string name="pin_pad_card_no_hint">Please input correct card No</string>
+    <string name="pin_pad_calculate_algorithm_type">计算PinBlock的算法类型</string>
+    <string name="pin_pad_des">3DES</string>
+    <string name="pin_pad_sm4">SM4</string>
+    <string name="pin_pad_pik_key_system">PIK key system</string>
+    <string name="pin_pad_sec_normal">SEC_MkSk</string>
+    <string name="pin_pad_sec_duk">SEC_DuKpt</string>
+
+    <string name="please_pay_password">Please pay PIN</string>
+    <string name="password_input_hint">Enter PIN, click OK if no PIN</string>
+    <string name="transaction_card_number">CARD NO</string>
+
+    <string name="pin_pad_set_pin_pad_mode">Set PinPad mode</string>
+    <string name="pin_pad_mode_normal">Normal</string>
+    <string name="pin_pad_mode_long_press_to_clear">Long press to clear</string>
+    <string name="pin_pad_mode_silent">Silent</string>
+    <string name="pin_pad_mode_green_led">Green LED</string>
+    <string name="pin_pad_set_pin_pad_text">Set PinPad text</string>
+    <string name="pin_pad_text_confirm">Confirm</string>
+    <string name="pin_pad_text_input_pin">Input PIN</string>
+    <string name="pin_pad_text_input_offline_pin">Input Offline PIN</string>
+    <string name="pin_pad_text_reinput_offline_pin_format">Offline PIN is wrong, remaining %d times</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="security_save_plaintext_key">Save PlainText Key</string>
+    <string name="security_save_cipher_text_key">Save CipherText Key</string>
+    <string name="security_inject_plaintext_key">Inject PlainText Key</string>
+    <string name="security_inject_cipher_text_key">Inject CipherText Key</string>
+    <string name="security_calc_mac">Calculate MAC</string>
+    <string name="security_data_encrypt">Data Encrypt</string>
+    <string name="security_data_decrypt">Data Decrypt</string>
+    <string name="security_get_encrypt_sn">Get encrypted data by hardware serial number (only used in China)</string>
+    <string name="security_DuKpt_save_key">DuKpt Inject Key</string>
+    <string name="security_DuKpt_calc_mac">DuKpt Calculate MAC</string>
+    <string name="security_DuKpt_data_encrypt">DuKpt Data Encrypt</string>
+    <string name="security_DuKpt_data_decrypt">DuKpt Data Decrypt</string>
+    <string name="security_DuKpt_increase_ksn">DuKpt KSN Increase</string>
+    <string name="security_DuKpt_current_ksn">DuKpt Get Current KSN</string>
+    <string name="security_DuKpt_aes_save_key">DuKpt-AES save Key</string>
+    <string name="security_save_tr31_key">Save TR31 key test</string>
+    <string name="security_delete_key">Delete Key</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="emv_swing_card_mag">Please swipe card</string>
+    <string name="emv_swing_card_ic">Please swipe card and insert card</string>
+    <string name="emv_confirm_card_no">Confirm card number</string>
+    <string name="emv_confirm_cert">Confirm certificate information</string>
+    <string name="emv_card_no_error">Get Card info error</string>
+    <string name="emv_app_select">Please select app</string>
+    <string name="emv_ic_process">NFC/IC Process</string>
+    <string name="emv_mag_process">Magnetic Process</string>
+    <string name="emv_read_rupay_card">Read Rupay card</string>
+    <string name="emv_other">EMV Others</string>
+    <string name="emv_query_ec_balance">QueryECBalance</string>
+    <string name="emv_remove_card">Please remove card&#8230;</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="other_language">Language</string>
+    <string name="other_language_auto">Auto</string>
+    <string name="other_language_zh_cn">简体中文</string>
+    <string name="other_language_en_us">English</string>
+    <string name="other_language_ja_jp">日本語</string>
+
+    <string name="other_version_sn">Device SN：</string>
+    <string name="other_version_rom">Rom Version：</string>
+    <string name="other_version_device">Device Model：</string>
+    <string name="other_version_demo">SunmiSDKTestDemo Version：</string>
+    <string name="other_version_service">SunmiPayHardwareService Version：</string>
+    <string name="other_scan_result">Scan Result</string>
+
+    <string name="setting">Setting</string>
+    <string name="setting_value">Value:</string>
+    <string name="setting_key_partition">Key partition</string>
+    <string name="setting_psam_channel">PSAM channel</string>
+    <string name="setting_switch">Switch</string>
+    <string name="setting_auth_restore_nfc">AutoRestoreNfc</string>
+    <string name="setting_pinpad_mode">PinPad mode</string>
+    <string name="setting_pcd_param">PCD Param</string>
+    <string name="setting_set_pcd_param">Set PCD Param</string>
+    <string name="setting_clear_aid">Clear Aid</string>
+    <string name="setting_clear_capk">Clear Capk</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="security_kek">KEK</string>
+    <string name="security_tmk">TMK</string>
+    <string name="security_tdk">TDK</string>
+    <string name="security_pik">PIK</string>
+    <string name="security_mak">MAK</string>
+    <string name="security_key_type">Key Type</string>
+    <string name="security_key_index">key index</string>
+    <string name="security_key_value">key value</string>
+    <string name="security_rec_key">Custom Key Type</string>
+    <string name="security_check_value">key check value(can be empty)</string>
+    <string name="security_target_pkg_name">Target package name</string>
+
+    <string name="security_mak_index">MAK Index</string>
+    <string name="security_decrypt_index">encrypt key index</string>
+    <string name="security_key_alg_type">key algorithm type</string>
+    <string name="security_alg_aes">AES</string>
+    <string name="security_alg_sm4">SM4</string>
+    <string name="security_alg_3des_or_des">3DES/DES</string>
+
+    <string name="security_ksn_hint">please input correct ksn</string>
+    <string name="security_key_value_hint">please input correct key value</string>
+    <string name="security_check_value_hint">please input correct check value</string>
+    <string name="security_source_data_hint">please input correct source data</string>
+    <string name="security_duKpt_key_hint">please input correct key index (range 0&#8211;19)</string>
+    <string name="security_key_index_hint">please input correct key index (range 0&#8211;19)</string>
+    <string name="security_init_vector_hint">please input correct initialization vector (8 byte)</string>
+    <string name="security_decrypt_index_hint">please input correct encrypt index (range 0&#8211;19)</string>
+    <string name="security_target_pkg_name_hint">Target app name should not be empty</string>
+    <string name="security_initial_key_id_hint">Please input correct initial key Id</string>
+
+    <string name="security_mac_opt_type">Mac operate type</string>
+    <string name="security_mac_opt_calc">Calculate Mac</string>
+    <string name="security_mac_opt_verify">Verify Mac</string>
+    <string name="security_mac_calc_type1">MAC_ALG_ISO_9797_1_MAC_ALG1</string>
+    <string name="security_mac_calc_type2">MAC_ALG_ISO_9797_1_MAC_ALG3</string>
+    <string name="security_mac_calc_type3">MAC_ALG_ISO_16609_MAC_ALG1</string>
+    <string name="security_mac_calc_type4">MAC_ALG_FAST_MODE</string>
+    <string name="security_mac_calc_type5">MAC_ALG_X9_19</string>
+    <string name="security_mac_calc_type6">MAC_ALG_CBC</string>
+    <string name="security_mac_calc_type7">MAC_ALG_CUP_SM4_MAC_ALG1</string>
+    <string name="security_mac_calc_type8">MAC_ALG_FAST_MODE_INTERNATIONAL</string>
+    <string name="security_mac_calc_type9">MAC_ALG_CBC_INTERNATIONAL</string>
+
+    <string name="security_source_data">source data</string>
+    <string name="security_mac_data">Mac data</string>
+    <string name="security_encrypt_type">encrypt mode</string>
+    <string name="security_calc_result">PIN Block :  </string>
+    <string name="security_mac_alg_type">mac algorithm type</string>
+    <string name="security_init_vector">initialization vector</string>
+
+    <string name="security_data_mode_ebc">DATA_MODE_ECB</string>
+    <string name="security_data_mode_cbc">DATA_MODE_CBC</string>
+    <string name="security_data_mode_ofb">DATA_MODE_OFB</string>
+    <string name="security_data_mode_cfb">DATA_MODE_CFB</string>
+    <string name="security_decrypt_mode">decrypt mode</string>
+
+    <string name="security_duKpt_ksn">KSN</string>
+    <string name="security_duKpt_ksn_value">KSN value</string>
+    <string name="security_duKpt_bdk">Key_Type_DuKpt_BDK</string>
+    <string name="security_duKpt_pek">Key_Type_DuKpt_IPEK</string>
+    <string name="security_duKpt_ksn_control">KSN Control</string>
+    <string name="security_duKpt_get_ksn">Get the current KSN</string>
+    <string name="security_duKpt_ksn_increased">KSN increased</string>
+    <string name="security_dukpt_key_select">Dukpt key select</string>
+    <string name="security_dukpt_aes_initial_key_id">Initial key Id</string>
+    <string name="security_rsa_test">RSA Test</string>
+    <string name="security_gen_rsa_keys">Generate RSA keys</string>
+    <string name="security_get_rsa_pub_key">Get RSA public key</string>
+    <string name="security_rsa_pub_enc_pvt_dec">RSA pubKey enc/pvtKey dec</string>
+    <string name="security_rsa_pvt_enc_pub_dec">RSA pvtKey enc/pubKey dec</string>
+    <string name="security_rsa_signing">RSA signing</string>
+    <string name="security_rsa_verify_sign">RSA verify signature</string>
+    <string name="security_rsa_save_key">Save ciphertext key with RSA</string>
+    <string name="security_key_system">Key system</string>
+    <string name="security_key_system_mksk">SEC_MKSK</string>
+    <string name="security_key_system_dukpt">SEC_DUKPT</string>
+    <string name="security_key_system_rsa_key">SEC_RSA_KEY</string>
+    <string name="security_key_system_sm2_key">SEC_SM2_KEY</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="tax_test_page">Tax test</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="auth_and_read_data">Auth and read data</string>
+    <string name="non_auth_and_read_data">Non-Auth and read data</string>
+    <string name="write_data">Write data</string>
+    <string name="init_auth_data">Initialize auth data</string>
+    <string name="clear_auth_data">Clear auth data</string>
+
+    <string name="multi_thread_send_package">Multi Thread send package</string>
+    <string name="init_task">Initialize task</string>
+    <string name="start_test">Start test</string>
+    <string name="stop_test">Stop test</string>
+
+    <string name="tamper_log">Tamper log</string>
+    <string name="get_tamper_log">Get tamper log</string>
+    <string name="clear_tamper_log">Clear tamper log</string>
+
+    <string name="error_scan">Scan App is not installed, please upgrade ROM</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="print">Print</string>
+    <string name="screen_off_print">Screen off print</string>
+    <string name="print_text">Print Text</string>
+    <string name="print_text_content">Print Text Content</string>
+    <string name="print_text_size">Print Text Size</string>
+    <string name="e_signature">E-signature</string>
+    <string name="clear">Clear</string>
+    <string name="screen_rotation">Screen Rotation</string>
+    <string name="up">UP</string>
+    <string name="down">DOWN</string>
+    <string name="left">LEFT</string>
+    <string name="right">RIGHT</string>
+
+    <string name="text_mock">I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!</string>
+    <string name="set_date_time">Set Date&amp;Time</string>
+
+    <string name="text_mock1">I LOVE SUNMI!</string>
+    <string name="print_repeat_time">Repeat times</string>
+    <string name="print_screen_off_wait_time">Waiting time after screen off(Unit:s)</string>
+    <string name="print_screen_off_interval">Interval time between 2 print(Unit:s)</string>
+    <string name="device_comm">Device Communication</string>
+    <string name="device_shutdown">Shutdown</string>
+    <string name="device_reboot">Reboot</string>
+    <!-- 0-USB，1-串口，2-wifi，3-蓝牙 -->
+    <string name="usb_comm">USB</string>
+    <string name="serial_port_comm">Serial Port</string>
+    <string name="wifi_comm">WIFI</string>
+    <string name="bluetooth_comm">Bluetooth</string>
+    <string name="comm_type">Communication Type</string>
+    <string name="check">Check</string>
+    <string name="send_data">Send Data</string>
+    <string name="out_log">Output Log</string>
+    <string name="send">send</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="scan_camera_scanner">Camera Scanner</string>
+    <string name="scan_barcode_scanner_1d">1D Barcode Scanner</string>
+    <string name="scan_barcode_start">Start</string>
+    <string name="scan_not_supported">Not Supported</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="etc_search_etc_device">Search ETC device</string>
+    <string name="etc_i2c_data_exchange">I2C data exchange</string>
+    <string name="etc_search_set_param">Set search param</string>
+    <string name="etc_search_comm_channel">Channel</string>
+    <string name="etc_search_trans_power">Transmit power</string>
+    <string name="etc_search_buzzer">Buzzer</string>
+    <string name="etc_search_frag_timeout">Fragment timeout(s)</string>
+    <string name="etc_search_search_device">Search ETC device</string>
+    <string name="etc_search_max_device_num">Max ETC device num</string>
+    <string name="etc_search_timeout_time">Timeout time(ms)</string>
+    <string name="etc_search_interval_time">Interval time between two search(ms)</string>
+    <string name="etc_i2c_address">I2C address(Hex)</string>
+    <string name="etc_i2c_send_data">Send data(Hex)</string>
+    <string name="etc_i2c_expect_out_len">Expect out data len(Hex)</string>
+    <string name="etc_i2c_timeout_time">Timeout time(Hex, unit:ms)</string>
+    <string name="etc_i2c_data_exch">Data exchange</string>
+    <string name="etc_i2c_device_No">Device NO:</string>
+    <string name="etc_i2c_device_status">Device status:</string>
+    <string name="etc_i2c_dev_status_1">Low battery</string>
+    <string name="etc_i2c_dev_status_2">Normal battery</string>
+    <string name="etc_i2c_dev_status_3">Device invalid</string>
+    <string name="etc_i2c_dev_status_4">Device OK</string>
+    <string name="etc_i2c_dev_status_5">Card not exist</string>
+    <string name="etc_i2c_dev_status_6">Card exist</string>
+    <string name="etc_i2c_amount">Amount:</string>
+    <string name="etc_i2c_card_type_1">Debit card</string>
+    <string name="etc_i2c_card_type_2">Credit card</string>
+    <string name="etc_i2c_card_type_3">Illegal card</string>
+    <string name="etc_i2c_amount_unit">Cent</string>
+    <string name="etc_i2c_plate_color">Plate color:</string>
+    <string name="etc_i2c_plate_color_1">Blue</string>
+    <string name="etc_i2c_plate_color_2">Yellow</string>
+    <string name="etc_i2c_plate_color_3">Black</string>
+    <string name="etc_i2c_plate_color_4">White</string>
+    <string name="etc_i2c_plate_color_5">Green-gradient</string>
+    <string name="etc_i2c_plate_color_6">Yellow-Green mixed</string>
+    <string name="etc_i2c_plate_color_7">Blue-white gradient</string>
+    <string name="etc_i2c_plate_No">Plate No:</string>
+    <string name="etc_i2c_signal_level">Signal:</string>
+    <string name="etc_stress_test">Stress test</string>
+    <string name="etc_start_stress_test">Start stress test</string>
+    <string name="etc_stop_stress_test">Stop stress test</string>
+
+</resources>

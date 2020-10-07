@@ -1,0 +1,483 @@
+<resources>
+    <string name="app_name">SDKTestDemo</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="all_open">全开</string>
+    <string name="all_close">全关</string>
+    <string name="amount">金额（分）</string>
+    <string name="fail">失败</string>
+    <string name="success">成功</string>
+    <string name="loading">加载中</string>
+    <string name="handling">处理中</string>
+    <string name="requesting">请求中</string>
+
+    <string name="connect_loading">正在连接支付服务</string>
+    <string name="connect_success">与支付服务连接成功</string>
+    <string name="connect_fail">与支付服务断开连接，请退出重新连接试试</string>
+
+    <string name="basic">基础模块</string>
+    <string name="read_card">卡模块</string>
+    <string name="pin_pad">密码键盘模块</string>
+    <string name="security">安全模块</string>
+    <string name="emv">EMV模块</string>
+    <string name="scan">扫码</string>
+    <string name="version">版本</string>
+    <string name="other">其他</string>
+    <string name="etc">ETC模块</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="basic_get_sys_param">获取系统参数</string>
+    <string name="basic_set_sys_param">设置系统参数</string>
+    <string name="basic_buzzer">蜂鸣器</string>
+    <string name="basic_led">LED灯控制</string>
+    <string name="basic_led_rb_on_new">红蓝亮(New)</string>
+    <string name="basic_led_yg_on_new">黄绿亮(New)</string>
+    <string name="basic_led_all_on_new">全亮(New)</string>
+    <string name="basic_led_all_off_new">全灭(New)</string>
+    <string name="basic_screen_mode">设置屏幕独占</string>
+
+    <string name="basic_buzzer_time">蜂鸣次数</string>
+    <string name="basic_buzzer_time_delay">时间间隔（单位：毫秒 200~10000）</string>
+    <string name="basic_buzzer_1">1次</string>
+    <string name="basic_buzzer_2">2次</string>
+    <string name="basic_buzzer_3">3次</string>
+    <string name="basic_buzzer_4">4次</string>
+    <string name="basic_buzzer_5">5次</string>
+    <string name="basic_buzzer_6">6次</string>
+    <string name="basic_buzzer_time_delay_hint">请输入正确的鸣响时间间隔</string>
+
+    <string name="basic_sys_key">关键字名称（目前只能设置Reserved）</string>
+    <string name="basic_sys_value">关键字属性值</string>
+    <string name="basic_sys_key_hint">请输入关键字名称</string>
+
+    <string name="basic_set_screen_monopoly">设置屏幕独占</string>
+    <string name="basic_clear_screen_monopoly">清除屏幕独占</string>
+    <string name="basic_set_status_bar_drop_down_mode">设置状态栏下拉模式</string>
+    <string name="basic_disable">禁用</string>
+    <string name="basic_enable">启用</string>
+    <string name="basic_set_nav_bar_visibility">设置导航栏(条目)可见性</string>
+    <string name="basic_hide_nav_bar">隐藏导航栏</string>
+    <string name="basic_show_nav_bar">显示导航栏</string>
+    <string name="basic_hide_nav_back">隐藏Back键</string>
+    <string name="basic_hide_nav_home">隐藏Home键</string>
+    <string name="basic_hide_nav_recent">隐藏Recent键</string>
+    <string name="basic_hide_nav_back_and_home">隐藏Back和Home键</string>
+    <string name="basic_hide_nav_back_and_recent">隐藏Back和Recent键</string>
+    <string name="basic_hide_nav_home_and_recent">隐藏Home和Recent键</string>
+    <string name="basic_hide_nav_all">全部隐藏</string>
+    <string name="basic_show_nav_all">全部显示</string>
+    <string name="basic_screen_model_hint">屏幕独占\n电源键禁用\n音量键禁用\n系统状态栏禁用\n系统导航栏禁用</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="card_test_mag">磁卡测试</string>
+    <string name="card_test_mag_enc">磁卡测试(磁道加密)</string>
+    <string name="card_test_ic">IC卡测试</string>
+    <string name="card_test_m1">M1卡测试</string>
+    <string name="card_test_m1_psame">M1卡测试(SAM AV2密钥认证)</string>
+    <string name="card_test_sam">SAM卡测试</string>
+    <string name="card_test_MIFARE_Ultralight">MIFARE Ultralight C卡测试</string>
+    <string name="card_test_MIFARE_Ultralight_ev1">MiFare Ultralight ev1卡测试</string>
+    <string name="card_test_FELICA">FELICA卡测试</string>
+    <string name="card_test_apdu">普通APDU测试</string>
+    <string name="card_test_transmit_apdu">透传APDU测试</string>
+    <string name="card_test_mifare_plus">MifarePlus卡测试</string>>
+    <string name="card_test_sle4442_4428">SLE4442/4428卡片测试</string>
+    <string name="card_test_at24c">AT24Cxxx卡片测试</string>
+    <string name="card_test_at88scxx">AT88SCxxx卡片测试</string>
+
+    <string name="card_total">总共：</string>
+    <string name="card_success">成功：</string>
+    <string name="card_fail">失败：</string>
+    <string name="card_track1">磁道1：</string>
+    <string name="card_track2">磁道2：</string>
+    <string name="card_track3">磁道3：</string>
+    <string name="card_pan">主账号：</string>
+    <string name="card_service_code">服务码：</string>
+    <string name="card_check_ic_card">检到IC卡</string>
+    <string name="card_check_rf_card">检到RF卡</string>
+    <string name="card_check_card_error">检卡出错</string>
+    <string name="card_uuid">UUID：</string>
+    <string name="card_ats">ATS：</string>
+    <string name="card_atr">ATR：</string>
+    <string name="card_NO">卡号：</string>
+    <string name="card_expire_date">有效期：</string>
+    <string name="cardholder_name">持卡人姓名：</string>
+
+    <string name="card_sector">扇区（0&#8211;15）</string>
+    <string name="card_block">块号（0&#8211;2）</string>
+    <string name="card_key_A">KeyA</string>
+    <string name="card_key_B">KeyB</string>
+    <string name="card_block_0">第0块数据</string>
+    <string name="card_block_1">第1块数据</string>
+    <string name="card_block_2">第2块数据</string>
+    <string name="card_balance_symbol">钱包余额：</string>
+    <string name="card_cost">消费金额</string>
+    <string name="card_read">读卡</string>
+    <string name="card_write">写卡</string>
+    <string name="card_init">初始化钱包</string>
+    <string name="card_balance">钱包余额</string>
+    <string name="card_value_add">加值</string>
+    <string name="card_value_reduce">减值</string>
+    <string name="card_value_restore">存储</string>
+    <string name="card_sector_hint">请输入正确的扇区（0&#8211;15）</string>
+    <string name="card_block_hint">请输入正确的块号（0&#8211;2）</string>
+    <string name="card_key_hint">请输入正确的KeyA或者KeyB</string>
+    <string name="card_cost_hint">请输入正确的消费金额</string>
+    <string name="card_auth_success">卡片认证成功</string>
+    <string name="card_auth_fail">卡片认证失败</string>
+    <string name="card_wallet_init_success">初始化钱包格式成功</string>
+    <string name="card_wallet_init_fail">初始化钱包格式失败</string>
+    <string name="card_wallet_balance_success">获取钱包余额成功</string>
+    <string name="card_wallet_balance_fail">获取钱包余额失败</string>
+    <string name="card_wallet_add_value_success">钱包加值成功</string>
+    <string name="card_wallet_add_value_fail">钱包加值失败</string>
+    <string name="card_wallet_dec_value_success">钱包减值成功</string>
+    <string name="card_wallet_dec_value_fail">钱包减值失败</string>
+
+    <string name="card_command">命令</string>
+    <string name="card_lc_length">LC长度</string>
+    <string name="card_data">数据内容</string>
+    <string name="card_le_length">LE长度</string>
+    <string name="card_command_hint">请输入正确的命令</string>
+    <string name="card_lc_length_hint">请输入正确的LC长度</string>
+    <string name="card_data_hint">请输入正确的数据内容</string>
+    <string name="card_le_length_hint">请输入正确的LE长度</string>
+    <string name="card_hit_apdu_cmd">command(Hex,4B)</string>
+    <string name="card_hit_apdu_lc">Lc(Hex,1~2B unsigned,值为LEN)</string>
+    <string name="card_hit_apdu_indata">indata(Hex,LEN B)</string>
+    <string name="card_hit_apdu_le">Le(Hex,1~2B unsigned)</string>
+
+    <string name="card_read_trade_card">开始检卡（行业卡）</string>
+    <string name="card_nfc_apdu">发送APDU指令</string>
+    <string name="card_clean_result">清除结果</string>
+
+    <string name="card_auth_key">验证密码</string>
+    <string name="card_change_key">修改密码</string>
+    <string name="card_read_block_data">读块数据</string>
+    <string name="card_write_block_data">写块数据</string>
+    <string name="card_read_data">读数据</string>
+    <string name="card_write_data">写数据</string>
+    <string name="card_get_remain_auth_count">获取剩余验证密码次数</string>
+    <string name="card_write_protection_memory">锁定存储单元</string>
+    <string name="card_memory_protection_status">获存储单元的锁定状态</string>
+    <string name="card_remain_count">剩余次数：</string>
+    <string name="card_card_type">卡类型</string>
+    <string name="card_sam0">SAM0</string>
+    <string name="card_sam1">SAM1</string>
+    <string name="card_sle4442">SLE4442</string>
+    <string name="card_sle4428">SLE4428</string>
+    <string name="card_at24c01">AT24C01</string>
+    <string name="card_at24c02">AT24C02</string>
+    <string name="card_at24c04">AT24C04</string>
+    <string name="card_at24c08">AT24C08</string>
+    <string name="card_at24c16">AT24C16</string>
+    <string name="card_at24c32">AT24C32</string>
+    <string name="card_at24c64">AT24C64</string>
+    <string name="card_at24c128">AT24C128</string>
+    <string name="card_at24c256">AT24C256</string>
+    <string name="card_at24c512">AT24C512</string>
+    <string name="card_at88sc1608">AT88SC1608</string>
+    <string name="card_ctx512B">CTX512B</string>
+
+    <string name="card_check_card_psam">开始检卡(PSAM0)</string>
+    <string name="card_check_card_mifare">开始检卡(Mifare)</string>
+    <string name="card_mifare_auth">Mifare认证</string>
+    <string name="card_mifare_read_block">Mifare读block数据</string>
+    <string name="card_mifare_write_block">Mifare写block数据</string>
+    <string name="card_mifare_inc">Mifare加值</string>
+    <string name="card_mifare_dec">Mifare减值</string>
+
+    <string name="card_test_ctx512">CTX512卡测试</string>
+    <string name="card_update">更新</string>
+    <string name="card_ctx512_update_block">更新块数据</string>
+    <string name="card_ctx512_get_sign">获取签名</string>
+    <string name="card_ctx512_multi_read">读多个块</string>
+    <string name="card_ctr_code_multi_apdu_test">配置码及批处理APDU测试</string>
+    <string name="card_active_ctr_code">激活配置码(Hex)</string>
+    <string name="card_data_exchange_ctr_code">数据交互配置码(Hex)</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="pin_pad_card_no">请输入卡号（13&#8211;19）</string>
+    <string name="pin_pad_key_index">请输入秘钥索引（0&#8211;19）</string>
+    <string name="pin_pad_timeout">请输入超时时间（1&#8211;60 s）</string>
+    <string name="pin_pad_out_of_order_keyboard">乱序键盘</string>
+    <string name="pin_pad_orderly_keyboard">顺序键盘</string>
+    <string name="pin_pad_online_pin">在线PIN</string>
+    <string name="pin_pad_offline_pin">脱机PIN</string>
+    <string name="pin_pad_preset_keyboard">预置密码键盘</string>
+    <string name="pin_pad_custom_keyboard">自定义密码键盘</string>
+    <string name="pin_pad_bypass">是否支持bypass pin</string>
+    <string name="pin_pad_call_password_keyboard">调用密码键盘</string>
+    <string name="pin_pad_call_custom_keyboard">调用自定义密码键盘</string>
+    <string name="pin_pad_key_index_hint">请输入正确的密钥索引</string>
+    <string name="pin_pad_timeout_hint">请输入正确的超时时间</string>
+    <string name="pin_pad_card_no_hint">请输入正确的卡号</string>
+    <string name="pin_pad_calculate_algorithm_type">计算PinBlock的算法类型</string>
+    <string name="pin_pad_des">3DES</string>
+    <string name="pin_pad_sm4">SM4</string>
+    <string name="pin_pad_pik_key_system">PIK密钥体系</string>
+    <string name="pin_pad_sec_normal">SEC_MKSK</string>
+    <string name="pin_pad_sec_duk">SEC_DUKPT</string>
+
+    <string name="please_pay_password">请输入支付密码</string>
+    <string name="password_input_hint">请输入密码，无密码请点击确认</string>
+    <string name="transaction_card_number">卡号</string>
+
+    <string name="pin_pad_set_pin_pad_mode">设置密码键盘模式</string>
+    <string name="pin_pad_mode_normal">普通模式</string>
+    <string name="pin_pad_mode_long_press_to_clear">输PIN时长按清除</string>
+    <string name="pin_pad_mode_silent">输PIN时静音</string>
+    <string name="pin_pad_mode_green_led">输PIN时LED绿灯亮</string>
+    <string name="pin_pad_set_pin_pad_text">设置密码键盘文字</string>
+    <string name="pin_pad_text_confirm">确认</string>
+    <string name="pin_pad_text_input_pin">输入PIN</string>
+    <string name="pin_pad_text_input_offline_pin">输入脱机PIN</string>
+    <string name="pin_pad_text_reinput_offline_pin_format">脱机PIN错误，剩余%d次</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="security_save_plaintext_key">保存明文密钥</string>
+    <string name="security_save_cipher_text_key">保存密文密钥</string>
+    <string name="security_inject_plaintext_key">注入明文密钥</string>
+    <string name="security_inject_cipher_text_key">注入密文密钥</string>
+    <string name="security_calc_mac">计算MAC</string>
+    <string name="security_data_encrypt">加密数据</string>
+    <string name="security_data_decrypt">解密数据</string>
+    <string name="security_get_encrypt_sn">获取硬件序列号加密数据（只有中国使用）</string>
+    <string name="security_DuKpt_save_key">Dukpt注入密钥</string>
+    <string name="security_DuKpt_calc_mac">Dukpt密钥计算MAC</string>
+    <string name="security_DuKpt_data_encrypt">Dukpt密钥加密数据</string>
+    <string name="security_DuKpt_data_decrypt">Dukpt密钥解密数据</string>
+    <string name="security_DuKpt_increase_ksn">Dukpt的KSN自增1</string>
+    <string name="security_DuKpt_current_ksn">Dukpt获取当前KSN</string>
+    <string name="security_DuKpt_aes_save_key">DuKpt-AES保存密钥</string>
+    <string name="security_save_tr31_key">保存TR31密钥</string>
+    <string name="security_delete_key">删除密钥</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="emv_swing_card_mag">请刷卡</string>
+    <string name="emv_swing_card_ic">请刷卡、挥卡、插卡</string>
+    <string name="emv_confirm_card_no">确认卡号</string>
+    <string name="emv_confirm_cert">确认证件信息</string>
+    <string name="emv_card_no_error">获取卡信息错误</string>
+    <string name="emv_app_select">请选择应用</string>
+    <string name="emv_mag_process">磁卡处理</string>
+    <string name="emv_ic_process">非接/芯片卡处理</string>
+    <string name="emv_read_rupay_card">读卢比卡</string>
+    <string name="emv_other">EMV其他</string>
+    <string name="emv_query_ec_balance">查询电子现金余额</string>
+    <string name="emv_remove_card">请移卡&#8230;</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="other_language">语言</string>
+    <string name="other_language_auto">跟随系统</string>
+    <string name="other_language_zh_cn">简体中文</string>
+    <string name="other_language_en_us">English</string>
+    <string name="other_language_ja_jp">日本語</string>
+
+    <string name="other_version_sn">设备序列号：</string>
+    <string name="other_version_rom">Rom版本号：</string>
+    <string name="other_version_device">设备型号：</string>
+    <string name="other_version_demo">SunMiPaySdkDemo版本号：</string>
+    <string name="other_version_service">SunMiPayHardwareService版本号：</string>
+    <string name="other_scan_result">扫码结果</string>
+
+    <string name="setting">设置</string>
+    <string name="setting_value">值:</string>
+    <string name="setting_key_partition">密钥分区</string>
+    <string name="setting_psam_channel">PSAM通道</string>
+    <string name="setting_switch">切换</string>
+    <string name="setting_auth_restore_nfc">自动恢复NFC</string>
+    <string name="setting_pinpad_mode">密码键盘模式</string>
+    <string name="setting_pcd_param">PCD参数</string>
+    <string name="setting_set_pcd_param">设置PCD参数</string>
+    <string name="setting_clear_aid">清除Aid</string>
+    <string name="setting_clear_capk">清除Capk</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="security_kek">KEK</string>
+    <string name="security_tmk">TMK</string>
+    <string name="security_tdk">TDK</string>
+    <string name="security_pik">PIK</string>
+    <string name="security_mak">MAK</string>
+    <string name="security_key_type">秘钥类型</string>
+    <string name="security_key_index">秘钥索引</string>
+    <string name="security_key_value">秘钥数据</string>
+    <string name="security_rec_key">保留秘钥类型</string>
+    <string name="security_check_value">秘钥校验值（可以为空）</string>
+    <string name="security_target_pkg_name">目标App包名</string>
+
+    <string name="security_mak_index">MAK秘钥索引</string>
+    <string name="security_key_alg_type">秘钥算法类型</string>
+    <string name="security_decrypt_index">解密秘钥索引</string>
+    <string name="security_alg_aes">AES</string>
+    <string name="security_alg_sm4">SM4</string>
+    <string name="security_alg_3des_or_des">3DES/DES</string>
+
+    <string name="security_ksn_hint">请正确输入KSN</string>
+    <string name="security_key_value_hint">请正确输入秘钥数据</string>
+    <string name="security_check_value_hint">请正确输入秘钥校验值</string>
+    <string name="security_source_data_hint">请正确输入待计算的数据</string>
+    <string name="security_duKpt_key_hint">请正确输入秘钥索引(0&#8211;19)</string>
+    <string name="security_key_index_hint">请正确输入秘钥索引(0&#8211;19)</string>
+    <string name="security_init_vector_hint">请正确输入初始向量（8 byte）</string>
+    <string name="security_decrypt_index_hint">请正确输入解密秘钥索引(0&#8211;19)</string>
+    <string name="security_target_pkg_name_hint">目标App名称不能为空</string>
+    <string name="security_initial_key_id_hint">请输入正确的初始化key Id</string>
+
+    <string name="security_mac_opt_type">Mac操作类型</string>
+    <string name="security_mac_opt_calc">计算Mac</string>
+    <string name="security_mac_opt_verify">校验Mac</string>
+    <string name="security_mac_calc_type1">MAC_ALG_ISO_9797_1_MAC_ALG1</string>
+    <string name="security_mac_calc_type2">MAC_ALG_ISO_9797_1_MAC_ALG3</string>
+    <string name="security_mac_calc_type3">MAC_ALG_ISO_16609_MAC_ALG1</string>
+    <string name="security_mac_calc_type4">MAC_ALG_FAST_MODE</string>
+    <string name="security_mac_calc_type5">MAC_ALG_X9_19</string>
+    <string name="security_mac_calc_type6">MAC_ALG_CBC</string>
+    <string name="security_mac_calc_type7">MAC_ALG_CUP_SM4_MAC_ALG1</string>
+    <string name="security_mac_calc_type8">MAC_ALG_FAST_MODE_INTERNATIONAL</string>
+    <string name="security_mac_calc_type9">MAC_ALG_CBC_INTERNATIONAL</string>
+
+    <string name="security_source_data">待计算的数据</string>
+    <string name="security_mac_data">Mac数据</string>
+    <string name="security_calc_result">计算结果:</string>
+    <string name="security_mac_alg_type">mac算法类型</string>
+    <string name="security_encrypt_type">加密模式</string>
+    <string name="security_init_vector">初始向量</string>
+
+    <string name="security_data_mode_ebc">DATA_MODE_ECB</string>
+    <string name="security_data_mode_cbc">DATA_MODE_CBC</string>
+    <string name="security_data_mode_ofb">DATA_MODE_OFB</string>
+    <string name="security_data_mode_cfb">DATA_MODE_CFB</string>
+    <string name="security_decrypt_mode">解密模式</string>
+
+    <string name="security_duKpt_ksn">KSN</string>
+    <string name="security_duKpt_ksn_value">KSN值：</string>
+    <string name="security_duKpt_bdk">KEY_TYPE_DUKPT_BDK</string>
+    <string name="security_duKpt_pek">KEY_TYPE_DUKPT_IPEK</string>
+    <string name="security_duKpt_ksn_control">KSN控制</string>
+    <string name="security_duKpt_get_ksn">获取当前KSN</string>
+    <string name="security_duKpt_ksn_increased">KSN自增</string>
+    <string name="security_dukpt_key_select">Dukpt密钥选择</string>
+    <string name="security_dukpt_aes_initial_key_id">初始化Key Id</string>
+    <string name="security_rsa_test">RSA接口测试</string>
+    <string name="security_gen_rsa_keys">生成RSA公私玥</string>
+    <string name="security_get_rsa_pub_key">获取RSA公钥</string>
+    <string name="security_rsa_pub_enc_pvt_dec">RSA公钥加密/私钥解密</string>
+    <string name="security_rsa_pvt_enc_pub_dec">RSA私钥加密/公钥解密</string>
+    <string name="security_rsa_signing">RSA签名</string>
+    <string name="security_rsa_verify_sign">RSA验签</string>
+    <string name="security_rsa_save_key">保存密钥，解密密钥为RSA私钥</string>
+    <string name="security_key_system">密钥体系</string>
+    <string name="security_key_system_mksk">SEC_MKSK</string>
+    <string name="security_key_system_dukpt">SEC_DUKPT</string>
+    <string name="security_key_system_rsa_key">SEC_RSA_KEY</string>
+    <string name="security_key_system_sm2_key">SEC_SM2_KEY</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="tax_test_page">税控测试</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="auth_and_read_data">认证+读数据</string>
+    <string name="non_auth_and_read_data">不认证+读数据</string>
+    <string name="write_data">写数据</string>
+    <string name="init_auth_data">初始化认证数据</string>
+    <string name="clear_auth_data">清除认证数据</string>
+
+    <string name="multi_thread_send_package">多线程发包</string>
+    <string name="init_task">初始化任务</string>
+    <string name="start_test">开始测试</string>
+    <string name="stop_test">停止测试</string>
+
+    <string name="tamper_log">触发Log</string>
+    <string name="get_tamper_log">获取触发Log</string>
+    <string name="clear_tamper_log">清除触发Log</string>
+
+    <string name="error_scan">未安装扫码程序，请升级ROM</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="print">打印</string>
+    <string name="screen_off_print">息屏打印</string>
+    <string name="print_text">打印文字</string>
+    <string name="print_text_content">打印文字内容</string>
+    <string name="print_text_size">打印文字大小</string>
+    <string name="e_signature">电子签名</string>
+    <string name="clear">清除</string>
+    <string name="screen_rotation">屏幕旋转</string>
+    <string name="up">上</string>
+    <string name="down">下</string>
+    <string name="left">左</string>
+    <string name="right">右</string>
+    <string name="text_mock">国   国   国   国   国   国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国</string>
+    <string name="set_date_time">设置日期时间</string>
+
+    <string name="text_mock1">国\t\t\t\t\t\t\t\t国\t\t\t\t\t\t\t\t国\t\t\t\t\t\t\t\t国\t\t\t\t\t\t\t\t国</string>
+    <string name="print_repeat_time">重复次数</string>
+    <string name="print_screen_off_wait_time">息屏后等待时间(s)</string>
+    <string name="print_screen_off_interval">两次打印时间间隔(s)</string>
+    <string name="device_comm">设备通信</string>
+    <string name="device_shutdown">设备关机</string>
+    <string name="device_reboot">设备重启</string>
+    <!-- 0-USB，1-串口，2-wifi，3-蓝牙 -->
+    <string name="usb_comm">USB</string>
+    <string name="serial_port_comm">串口</string>
+    <string name="wifi_comm">WIFI</string>
+    <string name="bluetooth_comm">蓝牙</string>
+    <string name="comm_type">通信类型</string>
+    <string name="check">检查</string>
+    <string name="send_data">待发送的数据</string>
+    <string name="out_log">输出日志</string>
+    <string name="send">发送</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="scan_camera_scanner">二维码扫码</string>
+    <string name="scan_barcode_scanner_1d">一维码扫码</string>
+    <string name="scan_barcode_start">开始扫码</string>
+    <string name="scan_not_supported">不支持</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="etc_search_etc_device">搜索ETC设备</string>
+    <string name="etc_i2c_data_exchange">I2C数据交互</string>
+    <string name="etc_search_set_param">设置搜索参数</string>
+    <string name="etc_search_comm_channel">通信通道</string>
+    <string name="etc_search_trans_power">发射功率</string>
+    <string name="etc_search_buzzer">蜂鸣器</string>
+    <string name="etc_search_frag_timeout">帧超接收时时间(s)</string>
+    <string name="etc_search_search_device">搜索ETC设备</string>
+    <string name="etc_search_max_device_num">最大ETC设备数量</string>
+    <string name="etc_search_timeout_time">超时时间(ms)</string>
+    <string name="etc_search_interval_time">两次搜索间隔时间(ms)</string>
+    <string name="etc_i2c_address">I2C地址(Hex)</string>
+    <string name="etc_i2c_send_data">发送数据(Hex)</string>
+    <string name="etc_i2c_expect_out_len">期望收到数据的长度(Hex)</string>
+    <string name="etc_i2c_timeout_time">超时时间(Hex，单位：ms)</string>
+    <string name="etc_i2c_data_exch">数据交互</string>
+    <string name="etc_i2c_device_No">设备编号：</string>
+    <string name="etc_i2c_device_status">设备状态：</string>
+    <string name="etc_i2c_dev_status_1">设备低电</string>
+    <string name="etc_i2c_dev_status_2">电量正常</string>
+    <string name="etc_i2c_dev_status_3">设备失效</string>
+    <string name="etc_i2c_dev_status_4">设备正常</string>
+    <string name="etc_i2c_dev_status_5">卡片不存在</string>
+    <string name="etc_i2c_dev_status_6">卡片存在</string>
+    <string name="etc_i2c_amount">金额：</string>
+    <string name="etc_i2c_card_type_1">储值卡</string>
+    <string name="etc_i2c_card_type_2">记账卡</string>
+    <string name="etc_i2c_card_type_3">非法卡片</string>
+    <string name="etc_i2c_amount_unit">分</string>
+    <string name="etc_i2c_plate_color">车牌颜色：</string>
+    <string name="etc_i2c_plate_color_1">蓝色</string>
+    <string name="etc_i2c_plate_color_2">黄色</string>
+    <string name="etc_i2c_plate_color_3">黑色</string>
+    <string name="etc_i2c_plate_color_4">白色</string>
+    <string name="etc_i2c_plate_color_5">渐变绿色</string>
+    <string name="etc_i2c_plate_color_6">黄绿双拼色</string>
+    <string name="etc_i2c_plate_color_7">蓝白渐变色</string>
+    <string name="etc_i2c_plate_No">车牌号码：</string>
+    <string name="etc_i2c_signal_level">信号强度:</string>
+    <string name="etc_stress_test">压力测试</string>
+    <string name="etc_start_stress_test">开始压力测试</string>
+    <string name="etc_stop_stress_test">停止压力测试</string>
+</resources>

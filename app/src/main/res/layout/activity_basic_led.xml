@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_blue"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/smallSize"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    app:chipBackgroundColor="#0000ff"
+                    app:chipCornerRadius="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mb_blue_open"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_blue_open"
+                    app:layout_constraintTop_toTopOf="@+id/mb_blue_open" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_blue_open"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/itemSize"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="@string/open"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="4dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/chip_blue"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_blue_close"
+                    app:layout_constraintTop_toTopOf="@+id/constraint" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_blue_close"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/itemSize"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="@string/close"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="4dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/mb_blue_open"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mb_blue_open" />
+
+                <View
+                    android:id="@+id/view_blue"
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/colorLineColor"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mb_blue_open" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/smallSize"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    app:chipBackgroundColor="#FF9933"
+                    app:chipCornerRadius="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mb_yellow_open"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_yellow_open"
+                    app:layout_constraintTop_toTopOf="@+id/mb_yellow_open" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_yellow_open"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/itemSize"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="@string/open"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="4dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/chip_yellow"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_yellow_close"
+                    app:layout_constraintTop_toBottomOf="@+id/view_blue" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_yellow_close"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/itemSize"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="@string/close"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="4dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/mb_yellow_open"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mb_yellow_open" />
+
+                <View
+                    android:id="@+id/view_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/colorLineColor"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mb_yellow_open" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_green"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/smallSize"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    app:chipBackgroundColor="#00CC33"
+                    app:chipCornerRadius="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mb_green_open"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_green_open"
+                    app:layout_constraintTop_toTopOf="@+id/mb_green_open" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_green_open"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/itemSize"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="@string/open"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="4dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/chip_green"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_green_close"
+                    app:layout_constraintTop_toBottomOf="@+id/view_yellow" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_green_close"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/itemSize"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="@string/close"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="4dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/mb_green_open"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mb_green_open" />
+
+                <View
+                    android:id="@+id/view_green"
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/colorLineColor"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mb_green_open" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_red"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/smallSize"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    app:chipBackgroundColor="#FF0000"
+                    app:chipCornerRadius="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mb_red_open"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_red_open"
+                    app:layout_constraintTop_toTopOf="@+id/mb_red_open" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_red_open"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/itemSize"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="@string/open"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="4dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/chip_red"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_red_close"
+                    app:layout_constraintTop_toBottomOf="@+id/view_green" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_red_close"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/itemSize"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="@string/close"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="4dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/mb_red_open"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mb_red_open" />
+
+                <View
+                    android:id="@+id/view_red"
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/colorLineColor"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mb_red_open" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_all_open"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/titleSize"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:text="@string/all_open"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="8dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_all_close"
+                    app:layout_constraintTop_toBottomOf="@+id/view_red" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_all_close"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/titleSize"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:text="@string/all_close"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="8dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/mb_all_open"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_red" />
+
+                <View
+                    android:id="@+id/view_divide_new"
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/colorLineColor"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mb_all_close" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_new_rb_on"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/titleSize"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:text="@string/basic_led_rb_on_new"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="8dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_new_yg_on"
+                    app:layout_constraintTop_toBottomOf="@+id/view_divide_new" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_new_yg_on"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/titleSize"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:text="@string/basic_led_yg_on_new"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="8dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/mb_new_rb_on"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_divide_new" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_new_all_on"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/titleSize"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:text="@string/basic_led_all_on_new"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="8dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/mb_new_all_off"
+                    app:layout_constraintTop_toBottomOf="@+id/mb_new_rb_on" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_new_all_off"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/titleSize"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:text="@string/basic_led_all_off_new"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:backgroundTint="@color/colorOrange"
+                    app:cornerRadius="8dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/mb_new_all_on"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mb_new_rb_on" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

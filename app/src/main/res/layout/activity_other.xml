@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleSize"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/other_language"
+            layout="@layout/common_item" />
+
+        <include
+            android:id="@+id/other_e_signature"
+            layout="@layout/common_item" />
+
+        <include
+            android:id="@+id/other_screen"
+            layout="@layout/common_item" />
+
+        <include
+            android:id="@+id/other_gb2312"
+            layout="@layout/common_item" />
+
+        <include
+            android:id="@+id/other_date_time"
+            layout="@layout/common_item" />
+
+        <include
+            android:id="@+id/other_version"
+            layout="@layout/common_item" />
+
+        <include
+            android:id="@+id/other_multi_thread"
+            layout="@layout/common_item"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/other_device_comm"
+            layout="@layout/common_item" />
+
+        <include
+            android:id="@+id/other_tamper_log"
+            layout="@layout/common_item"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/other_setting"
+            layout="@layout/common_item" />
+
+    </LinearLayout>
+
+</LinearLayout>

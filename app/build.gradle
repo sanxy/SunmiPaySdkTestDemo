@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.sm.sdk.demo"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 118
+        versionName "v2.2.55"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'sunmi'
+            keyPassword 'SunmiPay'
+            storeFile file('../app/sunmi.jks')
+            storePassword 'sunmipay'
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+        release {
+            debuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '30.0.1'
+
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.all {
+//            variant.packageApplicationProvider.get().outputDirectory = new File(project.rootDir.absolutePath + "/app/build/outputs/apk")
+//            outputFileName = "app" + "-" + buildType.name + ".apk"
+////            outputFileName = "SunmiSDKTestDemo_" + defaultConfig.versionName + "_" + buildType.name + ".apk"
+//            variant.getAssembleProvider().configure() {
+//                it.doLast {
+//                    delete {
+//                        delete "build/outputs/apk/output.json"
+//                    }
+//                }
+//            }
+//        }
+//    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.sunmi:sunmiui:1.1.27'
+    implementation 'com.sunmi:printerlibrary:1.0.7'
+}
